@@ -1,0 +1,1 @@
+https://downloadcenter.intel.com/download/29227/Chipset-INF-Utility contains a newer version of the required driver. The version specified in the release note could not be found.

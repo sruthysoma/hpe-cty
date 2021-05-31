@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8' />
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}"/>
+        <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='dist/jquery.toast.min.js') }}"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="{{ url_for('static',filename='styles.css') }}" rel="stylesheet"/>
+        <link href="{{ url_for('static', filename='dist/jquery.toast.min.css') }}" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <span class="navbar-brand" 
+                            style="font-family: 'Mansalva', cursive; color: #464646; font-size: 46px; font-weight: 200;">
+                        HPE - Catch Them Young
+                    </span>   
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row justify-content-center it">
+                <div class=" col-sm-5" id="one">
+                    <br>
+                    <p>Please upload documents only in 'pdf' format</p>
+                    <br>
+                    <div id="uploader">
+                        <div class="row justify-content-center uploadDoc">
+                            <div class="col-sm-8">
+                                <div class="fileUpload btn btn-orange">
+                                    <img src="https://image.flaticon.com/icons/svg/136/136549.svg" class="icon">
+                                    <span class="upl" id="upload">Upload document</span>
+                                    <input type="file" class="upload up" id="up" onchange="readURL(this);" />
+                                    <div><a href="#" class="fileviewer" target="_blank" rel="noopener noreferrer">view</a></div>
+                                </div><!-- btn-orange -->
+                                <div class= "os-options" id = "os-options">
+                                    <br>
+                                    <p>Choose your OS</p>
+                                    <input type="radio" name="os" value="Windows 10 - 1809" checked="checked"> Windows 10 - 1809<br/>
+                                    <input type="radio" name="os" value="Windows 2019"> Windows 2019<br/>
+                                    <input type="radio" name="os" value="Windows 2016"> Windows 2016<br/>
+                                    <input type="radio" name="os" value="Windows 2012R2"> Windows 2012R2<br/>
+                                    <input type="radio" name="os" value="Windows 2012"> Windows 2012<br/><br/>
+                                </div>
+                            </div><!-- col-3 -->
+                        </div><!--row-->
+                    </div><!--uploader-->
+
+                    <div class="text-center">
+                        <a class="btn btn-next" ><i class="fa fa-paper-plane"></i> Submit</a>
+                    </div>
+                    <div class="text-center" id = "wait_text" style="display: none; margin-bottom: 10px;"><span style = "color: red;"> Please wait...</span></div>
+                    <div class="text-center">
+                        <a class="btn btn-dwn" download><i class="fa fa-download"></i> Download</a>
+                    </div>
+                </div><!--one-->
+            </div><!-- row -->
+        </div><!-- container -->
+    </body>
+</html>

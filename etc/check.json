@@ -1,0 +1,28 @@
+{
+    'page_number': 1,
+    'object_type': 'annot',
+    'x0': Decimal('72'),
+    'y0': Decimal('692.805'),
+    'x1': Decimal('195.388'),
+    'y1': Decimal('705.454'),
+    'doctop': Decimal('86.546'),
+    'top': Decimal('86.546'),
+    'bottom': Decimal('99.195'),
+    'width': Decimal('123.388'),
+    'height': Decimal('12.649'),
+    'uri': 'https://loremipsum.io/',
+    'title': None,
+    'contents': None,
+    'data': {
+        'Type': /'Annot', 'Subtype': /
+        'Link',
+        'F': 4,
+        'Border': [0, 0, 0],
+        'Rect': [72, 692.80481, 195.38838, 705.45374],
+        'A': {
+            'Type': /'Action', 'S': /
+            'URI',
+            'URI': b 'https://loremipsum.io/'
+        }
+    }
+}
